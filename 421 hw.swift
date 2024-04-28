@@ -31,5 +31,5 @@ func treeSumExample(_ root: NodeExample?) -> Int {
         rightNode = unwrap
     }
     
-    return root!.value + treeSum(leftNode) + treeSum(rightNode)
+    return root!.value + treeSumExample(leftNode) + treeSumExample(rightNode)
 }
